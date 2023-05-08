@@ -1,6 +1,6 @@
 {
   "name": "@rikas/mui-activestorage-upload",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React MUI package for direct upload with activestorage",
   "main": "lib/index.ts",
   "module": "lib/index.js",
