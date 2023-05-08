@@ -5,8 +5,7 @@
   "main": "lib/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc --jsx react-jsx --declaration --declarationMap",
-    "build-alt": "tsc --jsx react-jsx"
+    "build": "tsc --jsx react-jsx --declaration --declarationMap"
   },
   "author": "Ricardo otero",
   "license": "ISC",
@@ -22,7 +21,7 @@
     "uuid": "^9.0.0"
   },
   "files": [
-    "dist"
+    "lib/**/*"
   ],
   "peerDependencies": {
     "@emotion/styled": "^11.11.0",
