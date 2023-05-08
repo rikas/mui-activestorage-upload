@@ -3,6 +3,7 @@
   "version": "1.0.2",
   "description": "React MUI package for direct upload with activestorage",
   "main": "lib/index.ts",
+  "module": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc --jsx react-jsx --declaration --declarationMap"
