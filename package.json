@@ -1,0 +1,40 @@
+{
+  "name": "@rikas/mui-activestorage-upload",
+  "version": "1.0.1",
+  "description": "React MUI package for direct upload with activestorage",
+  "main": "lib/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --jsx react-jsx --declaration --declarationMap",
+    "build-alt": "tsc --jsx react-jsx"
+  },
+  "author": "Ricardo otero",
+  "license": "ISC",
+  "keywords": [
+    "mui",
+    "activestorage",
+    "react",
+    "direct-upload"
+  ],
+  "dependencies": {
+    "@rails/activestorage": "^7.0.4-3",
+    "pretty-bytes": "^6.1.0",
+    "uuid": "^9.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.12.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.1.0",
+    "@types/rails__activestorage": "^7.0.1",
+    "@types/uuid": "^9.0.1",
+    "typescript": "^5.0.4"
+  }
+}
