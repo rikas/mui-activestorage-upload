@@ -54,8 +54,6 @@ export const DirectFileUpload = ({
       };
     });
 
-    console.log(files);
-
     // Remove duplicates
     const newUploads = files.filter((f) => !uploadedFiles.find((file) => file.name === f.name));
 
@@ -136,6 +134,7 @@ export const DirectFileUpload = ({
           <FileChip
             key={file.id}
             file={file}
+            externalError={error}
             uploadUrl={uploadUrl}
             onRemove={removeFile}
             onProgress={onFileProgress}
@@ -144,7 +143,7 @@ export const DirectFileUpload = ({
         ))}
       </Stack>
 
-      {uploadedFiles.length === 0 && invalid && (
+      {invalid && (
         <FormHelperText error sx={{ ml: 2 }}>
           <Typography variant="caption">{error}</Typography>
         </FormHelperText>

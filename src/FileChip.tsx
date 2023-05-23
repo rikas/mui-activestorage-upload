@@ -7,6 +7,7 @@ import { DirectUploadedFile } from './types';
 type Props = {
   file: DirectUploadedFile;
   uploadUrl: string;
+  externalError?: string;
   onFileError?: (file: DirectUploadedFile) => void;
   onRemove?: (file: DirectUploadedFile) => void;
   onProgress?: (file: DirectUploadedFile) => void;
@@ -15,6 +16,7 @@ type Props = {
 export const FileChip = ({
   file,
   uploadUrl,
+  externalError,
   onFileError,
   onRemove,
   onProgress,
@@ -38,7 +40,7 @@ export const FileChip = ({
       <Chip
         sx={{ maxWidth: 250 }}
         variant={done ? 'filled' : 'outlined'}
-        color={error ? 'error' : 'primary'}
+        color={error || externalError ? 'error' : 'primary'}
         label={`${name} ${size && `(${prettyBytes(size)})`}`}
         onDelete={() => handleRemove(done || !!error)}
       />
